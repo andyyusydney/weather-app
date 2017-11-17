@@ -5,6 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import citiesWeatherReducer from './reducers/citiesWeatherReducer';
 import App from './components/App.jsx';
 import thunk from 'redux-thunk';
+import './index.scss';
 
 let store = createStore(citiesWeatherReducer, {cities: []}, compose(applyMiddleware(thunk)));
 

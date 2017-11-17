@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CityWeather = ({name, temperature, condition}) => (
-	<tr>
-		<td>{name}</td>
-		<td>{temperature}</td>
-		<td>{condition}</td>
+	<tr className="city-weather__body-row">
+		<td className="city-weather__body-item">{name}</td>
+		<td className="city-weather__body-item">{temperature}</td>
+		<td className="city-weather__body-item">{condition}</td>
 	</tr>
 )
 
